@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 async def get_message(message: types.Message):
     chat_id = message.chat.id
 
-    text = "Привет! Hello! Как тебя зовут?)))"
+    text = "Привет! Hello!)))"
 
     sent_message = await bot.send_message(chat_id, text=text)
 
