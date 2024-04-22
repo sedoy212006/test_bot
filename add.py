@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 token = "5395649292:AAHAo5z_zyz3o-VU1TfRCOyKY--LXc74rMo"
-bot = Bot(token=token)
+bot = Bot(token = token)
 dp = Dispatcher(bot)
 
 
@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 async def get_message(message: types.Message):
     chat_id = message.chat.id
 
-    text = "Привет! Hello!)))"
+    text = "Привет! Спасибо за подписку!"
 
     sent_message = await bot.send_message(chat_id, text=text)
 
@@ -19,4 +19,4 @@ async def get_message(message: types.Message):
 
 executor.start_polling(dp)
 
-# bot.get_updates()
+bot.get_updates()
