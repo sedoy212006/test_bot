@@ -19,4 +19,4 @@ async def get_message(message: types.Message):
 
 executor.start_polling(dp)
 
-bot.get_updates()
+# bot.get_updates()
